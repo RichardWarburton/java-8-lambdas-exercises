@@ -1,3 +1,5 @@
+package com.insightfullogic.java8.exercises.chapter2;
+
 /**
  * Question 1:
  *  a. See Function.png
