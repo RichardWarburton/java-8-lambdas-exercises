@@ -4,7 +4,6 @@ import com.insightfullogic.java8.examples.music.Artist;
 
 import java.util.List;
 
-// BEGIN body
 public class Artists {
 
     private List<Artist> artists;
@@ -35,4 +34,3 @@ public class Artists {
     }
 
 }
-// END body
