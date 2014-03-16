@@ -1,7 +1,5 @@
 package com.insightfullogic.java8.exercises.chapter9;
 
-import com.insightfullogic.java8.music.Artist;
-import com.insightfullogic.java8.music.SampleData;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

@@ -1,7 +1,7 @@
 package com.insightfullogic.java8.exercises.chapter9;
 
-import com.insightfullogic.java8.music.Artist;
-import com.insightfullogic.java8.music.SampleData;
+import com.insightfullogic.java8.examples.music.Artist;
+import com.insightfullogic.java8.examples.music.SampleData;
 
 public class FakeLookupService {
 

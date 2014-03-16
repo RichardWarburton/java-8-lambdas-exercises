@@ -1,8 +1,7 @@
 package com.insightfullogic.java8.exercises.chapter4;
 
-import com.insightfullogic.java8.music.Artist;
-import com.insightfullogic.java8.music.SampleData;
-import org.hamcrest.Matchers;
+import com.insightfullogic.java8.examples.music.Artist;
+import com.insightfullogic.java8.examples.music.SampleData;
 import org.junit.Test;
 
 import java.util.List;
