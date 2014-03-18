@@ -1,6 +1,6 @@
 package com.insightfullogic.java8.examples.chapter9;
 
-import com.insightfullogic.java8.examples.music.Artist;
+import com.insightfullogic.java8.examples.chapter1.Artist;
 import rx.Observable;
 import rx.Observer;
 

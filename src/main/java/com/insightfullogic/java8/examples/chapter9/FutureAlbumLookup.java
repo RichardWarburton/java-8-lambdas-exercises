@@ -1,8 +1,8 @@
 package com.insightfullogic.java8.examples.chapter9;
 
-import com.insightfullogic.java8.examples.music.Album;
-import com.insightfullogic.java8.examples.music.Artist;
-import com.insightfullogic.java8.examples.music.Track;
+import com.insightfullogic.java8.examples.chapter1.Album;
+import com.insightfullogic.java8.examples.chapter1.Artist;
+import com.insightfullogic.java8.examples.chapter1.Track;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;

@@ -1,6 +1,6 @@
 package com.insightfullogic.java8.examples.chapter5;
 
-import com.insightfullogic.java8.examples.music.Artist;
+import com.insightfullogic.java8.examples.chapter1.Artist;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package com.insightfullogic.java8.examples.music;
+package com.insightfullogic.java8.examples.chapter1;
 
 import java.util.stream.Stream;
 

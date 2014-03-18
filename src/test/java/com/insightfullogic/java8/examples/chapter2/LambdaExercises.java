@@ -1,12 +1,12 @@
 package com.insightfullogic.java8.examples.chapter2;
 
-import com.insightfullogic.java8.duplicates.Function;
-import com.insightfullogic.java8.duplicates.Predicate;
 import org.junit.Test;
 
 import javax.swing.*;
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;

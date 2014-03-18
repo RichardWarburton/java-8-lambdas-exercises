@@ -1,10 +1,12 @@
-package com.insightfullogic.java8.examples.music;
+package com.insightfullogic.java8.examples.chapter1;
 
 import org.junit.Test;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
-import static com.insightfullogic.java8.examples.music.SampleData.theBeatles;
+import static com.insightfullogic.java8.examples.chapter1.SampleData.theBeatles;
 import static java.util.Collections.singletonList;
 import static java.util.stream.Collectors.toSet;
 import static junit.framework.Assert.assertEquals;

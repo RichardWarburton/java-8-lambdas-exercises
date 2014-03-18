@@ -1,7 +1,7 @@
 package com.insightfullogic.java8.examples.chapter3;
 
-import com.insightfullogic.java8.examples.music.Album;
-import com.insightfullogic.java8.examples.music.SampleData;
+import com.insightfullogic.java8.examples.chapter1.Album;
+import com.insightfullogic.java8.examples.chapter1.SampleData;
 import org.junit.Test;
 
 import java.util.Arrays;

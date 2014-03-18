@@ -1,17 +1,16 @@
 package com.insightfullogic.java8.exercises.chapter4;
 
-import com.insightfullogic.java8.examples.music.Artist;
-import com.insightfullogic.java8.examples.music.SampleData;
+import com.insightfullogic.java8.examples.chapter1.Artist;
+import com.insightfullogic.java8.examples.chapter1.SampleData;
 import org.junit.Test;
 
 import java.util.List;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.hasItems;
+import static org.junit.Assert.assertThat;
 
 public class PerformanceTest {
 

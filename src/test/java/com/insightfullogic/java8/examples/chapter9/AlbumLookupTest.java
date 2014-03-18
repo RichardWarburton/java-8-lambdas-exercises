@@ -1,13 +1,14 @@
 package com.insightfullogic.java8.examples.chapter9;
 
-import com.insightfullogic.java8.duplicates.BiFunction;
-import com.insightfullogic.java8.examples.music.Album;
-import com.insightfullogic.java8.examples.music.Artist;
-import com.insightfullogic.java8.examples.music.SampleData;
-import com.insightfullogic.java8.examples.music.Track;
+
+import com.insightfullogic.java8.examples.chapter1.Album;
+import com.insightfullogic.java8.examples.chapter1.Artist;
+import com.insightfullogic.java8.examples.chapter1.SampleData;
+import com.insightfullogic.java8.examples.chapter1.Track;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.function.BiFunction;
 import java.util.stream.Stream;
 
 import static org.junit.Assert.assertEquals;

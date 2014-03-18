@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package com.insightfullogic.java8.examples.music;
+package com.insightfullogic.java8.examples.chapter1;
 
 /**
  * @author richard

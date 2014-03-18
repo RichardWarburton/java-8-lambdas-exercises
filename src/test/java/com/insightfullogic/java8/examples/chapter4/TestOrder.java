@@ -1,9 +1,8 @@
 package com.insightfullogic.java8.examples.chapter4;
 
-import com.insightfullogic.java8.duplicates.Function;
-import com.insightfullogic.java8.examples.music.Album;
-import com.insightfullogic.java8.examples.music.SampleData;
-import com.insightfullogic.java8.examples.music.Track;
+import com.insightfullogic.java8.examples.chapter1.Album;
+import com.insightfullogic.java8.examples.chapter1.SampleData;
+import com.insightfullogic.java8.examples.chapter1.Track;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,6 +10,7 @@ import org.junit.runners.Parameterized;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.function.Function;
 
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;

@@ -1,6 +1,5 @@
 package com.insightfullogic.java8.examples.chapter2;
 
-import com.insightfullogic.java8.duplicates.BinaryOperator;
 import org.junit.Test;
 
 import javax.swing.*;
@@ -9,6 +8,7 @@ import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
 import java.util.function.Predicate;
 
 /**

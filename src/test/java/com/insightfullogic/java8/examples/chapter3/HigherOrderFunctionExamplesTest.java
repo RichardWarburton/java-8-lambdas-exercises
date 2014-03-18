@@ -1,9 +1,12 @@
 package com.insightfullogic.java8.examples.chapter3;
 
-import com.insightfullogic.java8.examples.music.Track;
+import com.insightfullogic.java8.examples.chapter1.Track;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

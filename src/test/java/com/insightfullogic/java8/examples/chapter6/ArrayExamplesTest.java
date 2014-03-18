@@ -8,7 +8,6 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
 
 @RunWith(value = Parameterized.class)
 public class ArrayExamplesTest {

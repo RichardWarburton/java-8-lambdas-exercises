@@ -1,6 +1,6 @@
 package com.insightfullogic.java8.examples.chapter5.mutable_custom;
 
-import com.insightfullogic.java8.examples.music.Album;
+import com.insightfullogic.java8.examples.chapter1.Album;
 
 public final class AlbumSale {
 

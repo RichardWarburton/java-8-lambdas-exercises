@@ -1,11 +1,15 @@
 package com.insightfullogic.java8.examples.chapter5;
 
-import com.insightfullogic.java8.duplicates.Function;
-import com.insightfullogic.java8.examples.music.Artist;
-import com.insightfullogic.java8.examples.music.SampleData;
+
+import com.insightfullogic.java8.examples.chapter1.Artist;
+import com.insightfullogic.java8.examples.chapter1.SampleData;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.StringJoiner;
+import java.util.function.Function;
 
 import static org.junit.Assert.assertEquals;
 

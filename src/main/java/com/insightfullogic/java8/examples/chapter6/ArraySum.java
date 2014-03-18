@@ -1,8 +1,9 @@
 package com.insightfullogic.java8.examples.chapter6;
 
-import com.insightfullogic.java8.examples.music.Album;
-import com.insightfullogic.java8.examples.music.SampleData;
-import com.insightfullogic.java8.examples.music.Track;
+import com.insightfullogic.java8.examples.chapter1.Album;
+import com.insightfullogic.java8.examples.chapter1.SampleData;
+import com.insightfullogic.java8.examples.chapter1.Track;
+
 import org.openjdk.jmh.Main;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.RunnerException;

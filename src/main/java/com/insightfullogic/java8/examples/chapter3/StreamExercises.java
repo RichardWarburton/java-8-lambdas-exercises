@@ -1,7 +1,7 @@
 package com.insightfullogic.java8.examples.chapter3;
 
-import com.insightfullogic.java8.examples.music.Album;
-import com.insightfullogic.java8.examples.music.Artist;
+import com.insightfullogic.java8.examples.chapter1.Album;
+import com.insightfullogic.java8.examples.chapter1.Artist;
 
 import java.util.ArrayList;
 import java.util.List;

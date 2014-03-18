@@ -1,14 +1,7 @@
 package com.insightfullogic.java8.codepad;
 
-import java.time.*;
-import java.time.temporal.TemporalAdjusters;
-import java.util.Arrays;
+import java.time.LocalDateTime;
 import java.util.Date;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
 
 public class CodePad {
 

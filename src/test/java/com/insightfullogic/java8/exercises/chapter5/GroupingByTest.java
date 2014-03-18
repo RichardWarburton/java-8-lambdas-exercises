@@ -2,7 +2,6 @@ package com.insightfullogic.java8.exercises.chapter5;
 
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;

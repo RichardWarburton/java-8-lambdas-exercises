@@ -2,14 +2,11 @@ package com.insightfullogic.java8.exercises.chapter3;
 
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
 import static java.util.Arrays.asList;
-import static java.util.stream.Collectors.toList;
-import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 public class MapUsingReduceTest {

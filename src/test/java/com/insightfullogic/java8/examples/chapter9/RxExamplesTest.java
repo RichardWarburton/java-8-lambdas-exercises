@@ -1,7 +1,7 @@
 package com.insightfullogic.java8.examples.chapter9;
 
-import com.insightfullogic.java8.examples.music.Artist;
-import com.insightfullogic.java8.examples.music.SampleData;
+import com.insightfullogic.java8.examples.chapter1.Artist;
+import com.insightfullogic.java8.examples.chapter1.SampleData;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
