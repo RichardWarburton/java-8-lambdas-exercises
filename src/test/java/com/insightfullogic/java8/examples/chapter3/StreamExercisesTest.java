@@ -18,27 +18,7 @@ public class StreamExercisesTest {
         assertEquals(4, countBandMembersExternal(Arrays.asList(SampleData.johnColtrane, SampleData.theBeatles)));
     }
 
-    @Test
-    public void internal() {
-        assertEquals(4, countBandMembersInternal(Arrays.asList(SampleData.johnColtrane, SampleData.theBeatles)));
-    }
 
-    @Test
-    public void addsUpExample() {
-        assertEquals(6, addUp(Stream.of(1, 2, 3)));
-    }
-
-    @Test
-    public void formattingExample() {
-        List<String> formatted = formattedArtists(SampleData.threeArtists());
-        assertEquals("John Coltrane: US", formatted.get(0));
-    }
-
-    @Test
-    public void epsExample() {
-        List<Album> eps = StreamExercises.onlyEps(SampleData.albums);
-        assertEquals(1, eps.size());
-    }
 
     @Test
     public void mapExample() {

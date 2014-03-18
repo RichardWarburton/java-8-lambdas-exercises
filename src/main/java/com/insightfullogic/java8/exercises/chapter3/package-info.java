@@ -2,10 +2,10 @@ package com.insightfullogic.java8.exercises.chapter3;
 
 /**
  * Question 1:
- *  TODO
+ *  See the Question1 class
  *
  * Question 2:
- *  TODO
+ *  see the Question2 class
  *
  * Question 3:
  *  a. Eager
