@@ -1,5 +1,6 @@
 package com.insightfullogic.java8.exercises.chapter6;
 
+import com.insightfullogic.java8.exercises.Exercises;
 import org.openjdk.jmh.Main;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.RunnerException;
@@ -56,8 +57,7 @@ public class OptimisationExample {
 
     @GenerateMicroBenchmark
     public int fastSumOfSquares() {
-        // TODO: implement faster version of slowSumOfSquares here
-        return 0;
+        return Exercises.replaceThisWithSolution();
     }
 
 }

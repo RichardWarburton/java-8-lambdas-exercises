@@ -4,7 +4,6 @@ import com.insightfullogic.java8.examples.chapter1.Artist;
 
 import java.util.function.Function;
 
-// BEGIN class
 public class BlockingArtistAnalyzer {
 
     private final Function<String, Artist> artistLookupService;
@@ -24,4 +23,3 @@ public class BlockingArtistAnalyzer {
     }
 
 }
-// END class

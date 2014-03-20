@@ -1,6 +1,7 @@
 package com.insightfullogic.java8.exercises.chapter9;
 
 import com.insightfullogic.java8.examples.chapter1.Artist;
+import com.insightfullogic.java8.exercises.Exercises;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -14,14 +15,11 @@ public class CallbackArtistAnalyser implements ArtistAnalyzer {
     }
 
     public void isLargerGroup(String artistName, String otherArtistName, Consumer<Boolean> handler) {
-        boolean isLarger = getNumberOfMembers(artistName) > getNumberOfMembers(otherArtistName);
-        handler.accept(isLarger);
+        Exercises.replaceThisWithSolution();
     }
 
     private long getNumberOfMembers(String artistName) {
-        return artistLookupService.apply(artistName)
-                                  .getMembers()
-                                  .count();
+        return Exercises.replaceThisWithSolution();
     }
 
 }

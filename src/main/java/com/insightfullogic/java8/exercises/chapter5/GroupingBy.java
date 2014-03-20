@@ -1,5 +1,7 @@
 package com.insightfullogic.java8.exercises.chapter5;
 
+import com.insightfullogic.java8.exercises.Exercises;
+
 import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.function.BinaryOperator;
@@ -9,11 +11,6 @@ import java.util.stream.Collector;
 
 public class GroupingBy<T, K> implements Collector<T, Map<K, List<T>>, Map<K, List<T>>> {
 
-    private final static Set<Characteristics> characteristics = new HashSet<>();
-    static {
-        characteristics.add(Characteristics.IDENTITY_FINISH);
-    }
-
     private final Function<? super T, ? extends K> classifier;
 
     public GroupingBy(Function<? super T, ? extends K> classifier) {
@@ -22,39 +19,27 @@ public class GroupingBy<T, K> implements Collector<T, Map<K, List<T>>, Map<K, Li
 
     @Override
     public Supplier<Map<K, List<T>>> supplier() {
-        return HashMap::new;
+        return Exercises.replaceThisWithSolution();
     }
 
     @Override
     public BiConsumer<Map<K, List<T>>, T> accumulator() {
-        return (map, element) -> {
-            K key = classifier.apply(element);
-            List<T> elements = map.computeIfAbsent(key, k -> new ArrayList<>());
-            elements.add(element);
-        };
+        return Exercises.replaceThisWithSolution();
     }
 
     @Override
     public BinaryOperator<Map<K, List<T>>> combiner() {
-        return (left, right) -> {
-            right.forEach((key, value) -> {
-                left.merge(key, value, (leftValue, rightValue) -> {
-                    leftValue.addAll(rightValue);
-                    return leftValue;
-                });
-            });
-            return left;
-        };
+        return Exercises.replaceThisWithSolution();
     }
 
     @Override
     public Function<Map<K, List<T>>, Map<K, List<T>>> finisher() {
-        return map -> map;
+        return Exercises.replaceThisWithSolution();
     }
 
     @Override
     public Set<Characteristics> characteristics() {
-        return characteristics;
+        return Exercises.replaceThisWithSolution();
     }
 
 }
