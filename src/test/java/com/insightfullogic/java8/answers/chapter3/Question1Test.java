@@ -2,7 +2,7 @@ package com.insightfullogic.java8.answers.chapter3;
 
 import com.insightfullogic.java8.examples.chapter1.Album;
 import com.insightfullogic.java8.examples.chapter1.SampleData;
-import com.insightfullogic.java8.exercises.chapter3.Question1;
+import com.insightfullogic.java8.answers.chapter3.Question1;
 import org.junit.Test;
 
 import java.util.List;
@@ -16,19 +16,19 @@ public class Question1Test {
 
     @Test
     public void addsEmptyList() {
-        int result = com.insightfullogic.java8.exercises.chapter3.Question1.addUp(Stream.empty());
+        int result = com.insightfullogic.java8.answers.chapter3.Question1.addUp(Stream.empty());
         assertEquals(0, result);
     }
 
     @Test
     public void addsListWithValues() {
-        int result = com.insightfullogic.java8.exercises.chapter3.Question1.addUp(Stream.of(1, 3, -2));
+        int result = com.insightfullogic.java8.answers.chapter3.Question1.addUp(Stream.of(1, 3, -2));
         assertEquals(2, result);
     }
 
     @Test
     public void extractsNamesAndOriginsOfArtists() {
-        List<String> namesAndOrigins = com.insightfullogic.java8.exercises.chapter3.Question1.getNamesAndOrigins(SampleData.getThreeArtists());
+        List<String> namesAndOrigins = com.insightfullogic.java8.answers.chapter3.Question1.getNamesAndOrigins(SampleData.getThreeArtists());
         assertEquals(asList("John Coltrane", "US", "John Lennon", "UK", "The Beatles", "UK"), namesAndOrigins);
     }
 

@@ -1,6 +1,6 @@
 package com.insightfullogic.java8.answers.chapter2;
 
-import com.insightfullogic.java8.exercises.chapter2.Question2;
+import com.insightfullogic.java8.answers.chapter2.Question2;
 import org.junit.Test;
 
 import java.util.Date;

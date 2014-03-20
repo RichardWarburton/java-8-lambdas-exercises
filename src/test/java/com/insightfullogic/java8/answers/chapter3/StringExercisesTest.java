@@ -1,6 +1,6 @@
 package com.insightfullogic.java8.answers.chapter3;
 
-import com.insightfullogic.java8.exercises.chapter3.StringExercises;
+import com.insightfullogic.java8.answers.chapter3.StringExercises;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -14,22 +14,22 @@ public class StringExercisesTest {
 
     @Test
     public void noLowercaseLettersInAnEmptyString() {
-        assertEquals(0, com.insightfullogic.java8.exercises.chapter3.StringExercises.countLowercaseLetters(""));
+        assertEquals(0, com.insightfullogic.java8.answers.chapter3.StringExercises.countLowercaseLetters(""));
     }
 
     @Test
     public void countsLowercaseLetterExample() {
-        assertEquals(3, com.insightfullogic.java8.exercises.chapter3.StringExercises.countLowercaseLetters("aBcDeF"));
+        assertEquals(3, com.insightfullogic.java8.answers.chapter3.StringExercises.countLowercaseLetters("aBcDeF"));
     }
 
     @Test
     public void suppoertsNoLowercaseLetters() {
-        assertEquals(0, com.insightfullogic.java8.exercises.chapter3.StringExercises.countLowercaseLetters("ABCDEF"));
+        assertEquals(0, com.insightfullogic.java8.answers.chapter3.StringExercises.countLowercaseLetters("ABCDEF"));
     }
 
     @Test
     public void noStringReturnedForEmptyList() {
-        assertFalse(com.insightfullogic.java8.exercises.chapter3.StringExercises.mostLowercaseString(Collections.<String>emptyList()).isPresent());
+        assertFalse(com.insightfullogic.java8.answers.chapter3.StringExercises.mostLowercaseString(Collections.<String>emptyList()).isPresent());
     }
 
     @Test

@@ -1,6 +1,6 @@
 package com.insightfullogic.java8.answers.chapter3;
 
-import com.insightfullogic.java8.exercises.chapter3.MapUsingReduce;
+import com.insightfullogic.java8.answers.chapter3.MapUsingReduce;
 import org.junit.Test;
 
 import java.util.Collections;

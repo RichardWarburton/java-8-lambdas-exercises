@@ -1,8 +1,8 @@
 package com.insightfullogic.java8.answers.chapter9;
 
-import com.insightfullogic.java8.exercises.chapter9.ArtistAnalyzer;
-import com.insightfullogic.java8.exercises.chapter9.CallbackArtistAnalyser;
-import com.insightfullogic.java8.exercises.chapter9.CompletableFutureArtistAnalyser;
+import com.insightfullogic.java8.answers.chapter9.ArtistAnalyzer;
+import com.insightfullogic.java8.answers.chapter9.CallbackArtistAnalyser;
+import com.insightfullogic.java8.answers.chapter9.CompletableFutureArtistAnalyser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

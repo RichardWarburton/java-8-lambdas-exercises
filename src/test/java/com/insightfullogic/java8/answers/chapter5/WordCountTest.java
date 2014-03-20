@@ -1,6 +1,6 @@
 package com.insightfullogic.java8.answers.chapter5;
 
-import com.insightfullogic.java8.exercises.chapter5.WordCount;
+import com.insightfullogic.java8.answers.chapter5.WordCount;
 import org.junit.Test;
 
 import java.util.Map;
