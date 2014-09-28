@@ -1,6 +1,6 @@
 package com.insightfullogic.java8.examples.chapter5;
 
-import java.util.EnumSet;
+import java.util.Collections;
 import java.util.Set;
 import java.util.function.BiConsumer;
 import java.util.function.BinaryOperator;
@@ -12,7 +12,7 @@ import java.util.stream.Collector;
 public class StringCollector implements Collector<String, StringCombiner, String> {
 // END class_def
 
-    private static final Set<Characteristics> characteristics = EnumSet.of(Characteristics.UNORDERED);
+    private static final Set<Characteristics> characteristics = Collections.emptySet();
 
     private final String delim;
     private final String prefix;
