@@ -1,13 +1,13 @@
 package com.insightfullogic.java8.exercises.chapter3;
 
-import org.junit.Test;
+import static java.util.Arrays.asList;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
-import static java.util.Arrays.asList;
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 public class MapUsingReduceTest {
 
@@ -29,6 +29,9 @@ public class MapUsingReduceTest {
     private <I, O> void assertMapped(Function<I, O> mapper, List<I> input, List<O> expectedOutput) {
         List<O> output = MapUsingReduce.map(input.stream(), mapper);
         assertEquals(expectedOutput, output);
+
+        List<O> parallelOutput = MapUsingReduce.map(input.parallelStream(), mapper);
+        assertEquals(expectedOutput, parallelOutput);
     }
 
 }
