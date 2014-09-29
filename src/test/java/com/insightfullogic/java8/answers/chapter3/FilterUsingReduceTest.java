@@ -1,14 +1,13 @@
 package com.insightfullogic.java8.answers.chapter3;
 
-import com.insightfullogic.java8.answers.chapter3.FilterUsingReduce;
-import org.junit.Test;
+import static java.util.Arrays.asList;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Predicate;
 
-import static java.util.Arrays.asList;
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 public class FilterUsingReduceTest {
 
@@ -35,6 +34,9 @@ public class FilterUsingReduceTest {
     private <I> void assertFiltered(Predicate<I> predicate, List<I> input, List<I> expectedOutput) {
         List<I> output = FilterUsingReduce.filter(input.stream(), predicate);
         assertEquals(expectedOutput, output);
+
+        List<I> parallelOutput = FilterUsingReduce.filter(input.parallelStream(), predicate);
+        assertEquals(expectedOutput, parallelOutput);
     }
 
 }
