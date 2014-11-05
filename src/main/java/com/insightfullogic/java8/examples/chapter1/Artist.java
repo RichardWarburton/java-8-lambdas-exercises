@@ -63,7 +63,7 @@ public final class Artist {
     }
 
     public boolean isFrom(String nationality) {
-        return nationality.equals(nationality);
+        return this.nationality.equals(nationality);
     }
 
     @Override
