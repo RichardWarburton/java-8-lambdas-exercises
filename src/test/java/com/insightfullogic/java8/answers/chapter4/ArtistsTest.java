@@ -2,7 +2,6 @@ package com.insightfullogic.java8.answers.chapter4;
 
 import com.insightfullogic.java8.examples.chapter1.Artist;
 import com.insightfullogic.java8.examples.chapter1.SampleData;
-import com.insightfullogic.java8.answers.chapter4.ArtistsFixed;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -14,7 +13,7 @@ import static org.junit.Assert.assertFalse;
 
 public class ArtistsTest {
 
-    private final com.insightfullogic.java8.answers.chapter4.ArtistsFixed optionalExamples = new ArtistsFixed(SampleData.getThreeArtists());
+    private final ArtistsFixed optionalExamples = new ArtistsFixed(SampleData.getThreeArtists());
 
     @Test
     public void indexWithinRange() {

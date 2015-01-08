@@ -5,26 +5,22 @@ import com.insightfullogic.java8.examples.chapter1.SampleData;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Optional;
-
 import static junit.framework.Assert.assertEquals;
-import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertFalse;
+import static junit.framework.Assert.assertNotNull;
 
 public class ArtistsTest {
 
-    private final ArtistsFixed optionalExamples = new ArtistsFixed(SampleData.getThreeArtists());
+    private final Artists optionalExamples = new Artists(SampleData.getThreeArtists());
 
     @Test
     public void indexWithinRange() {
-        Optional<Artist> artist = optionalExamples.getArtist(0);
-        assertTrue(artist.isPresent());
+        Artist artist = optionalExamples.getArtist(0);
+        assertNotNull(artist);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void indexOutsideRange() {
-        Optional<Artist> artist = optionalExamples.getArtist(4);
-        assertFalse(artist.isPresent());
+        optionalExamples.getArtist(4);
     }
 
     @Test
