@@ -1,14 +1,11 @@
 package com.insightfullogic.java8.examples.chapter3;
 
-import com.insightfullogic.java8.examples.chapter1.Album;
 import com.insightfullogic.java8.examples.chapter1.Artist;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Stream;
-
-import static java.util.stream.Collectors.toList;
 
 public class StreamExercises {
 
@@ -29,8 +26,11 @@ public class StreamExercises {
     // Advanced Exercise
     public static <T, R> List<R> map(Stream<T> stream, Function<T, R> mapper) {
         return stream.reduce(new ArrayList<>(), (acc, value) -> {
-            acc.add(mapper.apply(value));
-            return acc;
+        	// Make copy of list (modifying acc would violate contract of reduce method) 
+            ArrayList<R> result = new ArrayList<>();
+            result.addAll(acc);
+            result.add(mapper.apply(value));
+            return result;
         }, (left, right) -> {
             ArrayList<R> result = new ArrayList<>();
             result.addAll(left);

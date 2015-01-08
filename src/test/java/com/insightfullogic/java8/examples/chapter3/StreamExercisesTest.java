@@ -1,7 +1,7 @@
 package com.insightfullogic.java8.examples.chapter3;
 
-import com.insightfullogic.java8.examples.chapter1.Album;
 import com.insightfullogic.java8.examples.chapter1.SampleData;
+
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -22,8 +22,16 @@ public class StreamExercisesTest {
 
     @Test
     public void mapExample() {
-        List<Integer> values = StreamExercises.map(Stream.of(1, 2, 3), x -> x + 1);
+        Stream<Integer> stream = Stream.of(1, 2, 3);
+		List<Integer> values = StreamExercises.map(stream, x -> x + 1);
         assertEquals(Arrays.asList(2, 3, 4), values);
     }
 
+    @Test
+    public void mapExampleParallel() {
+        Stream<Integer> parallelStream = Stream.of(1, 2, 3).parallel();
+		List<Integer> values = StreamExercises.map(parallelStream, x -> x + 1);
+        assertEquals(Arrays.asList(2, 3, 4), values);
+    }
+    
 }
