@@ -81,7 +81,7 @@ public class OptimisationExampleFixed {
 
     @GenerateMicroBenchmark
     public int serialFastSumOfSquares() {
-        return arrayListOfNumbers.parallelStream()
+        return arrayListOfNumbers.stream()
                            .mapToInt(x -> x * x)
                            .sum();
     }
