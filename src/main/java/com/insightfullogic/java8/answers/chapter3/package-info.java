@@ -8,6 +8,7 @@ package com.insightfullogic.java8.answers.chapter3;
  *  see the Question2 class
  *
  * Question 3:
+ * This question is to test how much we know about evaluation. So as we understood, Streams are lazy and others are Eager.
  *  a. Eager
  *  b. Lazy
  *
