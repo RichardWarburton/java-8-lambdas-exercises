@@ -2,55 +2,51 @@ package com.insightfullogic.java8.examples.chapter5;
 
 public class StringCombiner {
 
-    private final String delim;
     private final String prefix;
     private final String suffix;
-    private final StringBuilder builder;
+    private final String delim;
+    private final StringBuilder buIlder;
 
     public StringCombiner(String delim, String prefix, String suffix) {
-        this.delim = delim;
         this.prefix = prefix;
         this.suffix = suffix;
-        builder = new StringBuilder();
+        this.delim = delim;
+        this.buIlder = new StringBuilder();
     }
 
     // BEGIN add
-public StringCombiner add(String element) {
-    if (areAtStart()) {
-        builder.append(prefix);
-    } else {
-        builder.append(delim);
+    public StringCombiner add (String word) {
+        if(!this.areAtStart()) {
+            this.buIlder.append(delim);
+        }
+        this.buIlder.append(word);
+
+        return this;
     }
-    builder.append(element);
-    return this;
-}
     // END add
 
-    private boolean areAtStart() {
-        return builder.length() == 0;
-    }
-
     // BEGIN merge
-public StringCombiner merge(StringCombiner other) {
-	if (other.builder.length() > 0) {
-        if (areAtStart()) {
-        	builder.append(prefix);
-        } else {
-        	builder.append(delim);
+    public StringCombiner merge (StringCombiner other) {
+        if(!other.equals(this)) {
+            if(!other.areAtStart() && !this.areAtStart()){
+                other.buIlder.insert(0, this.delim);
+            }
+            this.buIlder.append(other.buIlder);
         }
-        builder.append(other.builder, prefix.length(), other.builder.length());
+        return this;
     }
-    return this;
-}
     // END merge
 
+    // BEGIN toString
     @Override
     public String toString() {
-        if (areAtStart()) {
-            builder.append(prefix);
-        }
-        builder.append(suffix);
-        return builder.toString();
+        return prefix + buIlder.toString() + suffix;
     }
+    // END toString
 
+    // BEGIN areAtStart
+    private boolean areAtStart() {
+        return buIlder.length() == 0;
+    }
+    // END areAtStart
 }
