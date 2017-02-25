@@ -35,7 +35,7 @@ public class StringExercisesTest {
     @Test
     public void findsMostLowercaseString() {
         Optional<String> result = StringExercises.mostLowercaseString(Arrays.asList("a", "abc", "ABCde"));
-        assertEquals(result, Optional.of("abc"));
+        assertEquals(Optional.of("abc"), result);
     }
 
 }
