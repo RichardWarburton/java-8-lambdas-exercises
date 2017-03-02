@@ -5,6 +5,7 @@ import org.junit.Test;
 import javax.swing.*;
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -40,7 +41,7 @@ public class LambdaExercises {
 
     @Test
     public void _2b() {
-        ThreadLocal<DateFormat> threadSafeFormatter = ThreadLocal.withInitial(() -> DateFormat.getDateInstance());
+        ThreadLocal<DateFormat> threadSafeFormatter = ThreadLocal.withInitial(() -> DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.UK));
         DateFormat formatter = threadSafeFormatter.get();
         assertEquals("01-Jan-1970", formatter.format(new Date(0)));
     }
