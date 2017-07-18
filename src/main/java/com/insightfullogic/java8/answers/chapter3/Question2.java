@@ -12,5 +12,7 @@ public class Question2 {
                        .map(artist -> artist.getMembers().count())
                        .reduce(0L, Long::sum)
                        .intValue();
+        
+        //return artists.stream().flatMap(artist -> artist.getMembers()).count();
     }
 }
