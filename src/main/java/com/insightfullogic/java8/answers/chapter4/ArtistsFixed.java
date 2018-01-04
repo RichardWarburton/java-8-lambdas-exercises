@@ -26,4 +26,7 @@ public class ArtistsFixed {
                      .orElse("unknown");
     }
 
+    public Optional<String> getArtistNameOpt(int index) {
+        return getArtist(index).map(Artist::getName);
+    }
 }

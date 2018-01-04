@@ -7,8 +7,8 @@ import org.junit.Test;
 
 import java.util.Optional;
 
-import static junit.framework.Assert.assertEquals;
 import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
 public class ArtistsTest {
@@ -37,6 +37,18 @@ public class ArtistsTest {
     public void nameIndexOutsideRange() {
         String artist = optionalExamples.getArtistName(4);
         assertEquals("unknown", artist);
+    }
+
+    @Test
+    public void nameIndexOutsideRangeOpt() {
+        Optional<String> artist = optionalExamples.getArtistNameOpt(4);
+        assertFalse(artist.isPresent());
+    }
+
+    @Test
+    public void nameIndexInsideRangeOpt() {
+        Optional<String> artist = optionalExamples.getArtistNameOpt(0);
+        Assert.assertEquals("John Coltrane", artist.get());
     }
 
 }
