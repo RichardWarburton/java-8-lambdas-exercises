@@ -6,14 +6,14 @@ import java.util.Optional;
 
 public class StringExercises {
 
-    // Question 7
+    // Question 6
     public static int countLowercaseLetters(String string) {
         return (int) string.chars()
                            .filter(Character::isLowerCase)
                            .count();
     }
 
-    // Question 8
+    // Question 7
     public static Optional<String> mostLowercaseString(List<String> strings) {
         return strings.stream()
                       .max(Comparator.comparing(StringExercises::countLowercaseLetters));
