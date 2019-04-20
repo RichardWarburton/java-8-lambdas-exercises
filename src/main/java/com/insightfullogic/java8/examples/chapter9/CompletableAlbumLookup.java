@@ -95,7 +95,7 @@ future.completeExceptionally(new AlbumLookupException("Unable to find " + name))
                 sleep(1000);
             }
             return new Credentials();
-        }, service);
+        }, SERVICE);
     }
 
 }
