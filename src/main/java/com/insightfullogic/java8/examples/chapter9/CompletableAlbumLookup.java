@@ -9,7 +9,7 @@ import java.util.concurrent.*;
 
 public class CompletableAlbumLookup implements AlbumLookup {
 
-    private static final ExecutorService service = Executors.newFixedThreadPool(4);
+    private static final ExecutorService SERVICE = Executors.newFixedThreadPool(4);
 
     private final List<Track> tracks;
     private final List<Artist> artists;
@@ -43,7 +43,7 @@ CompletableFuture<Track> lookupTrack(String id) {
         // Some expensive work is done here <1>
         // ...
         return track; // <2>
-    }, service); // <3>
+    }, SERVICE); // <3>
 }
     // END lookupTrack
 
@@ -86,7 +86,7 @@ future.completeExceptionally(new AlbumLookupException("Unable to find " + name))
         return CompletableFuture.supplyAsync(() -> {
             sleep(1000);
             return tracks;
-        }, service);
+        }, SERVICE);
     }
 
     private CompletableFuture<Credentials> loginTo(String serviceName) {
@@ -95,7 +95,7 @@ future.completeExceptionally(new AlbumLookupException("Unable to find " + name))
                 sleep(1000);
             }
             return new Credentials();
-        }, service);
+        }, SERVICE);
     }
 
 }
