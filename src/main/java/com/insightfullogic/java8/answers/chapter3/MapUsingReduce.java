@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 /**
- * Advanced Exercises Question 2
+ * Advanced Exercises Question 1
  */
 public class MapUsingReduce {
 

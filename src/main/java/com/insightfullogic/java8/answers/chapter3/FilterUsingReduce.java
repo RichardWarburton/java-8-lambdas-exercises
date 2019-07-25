@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 /**
- * Advanced Exercises Question 1
+ * Advanced Exercises Question 2
  */
 public class FilterUsingReduce {
 
