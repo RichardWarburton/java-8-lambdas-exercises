@@ -27,5 +27,27 @@ public class MapUsingReduce {
             return newLeft;
         });
     }
+    /**
+     * This method solves advanced exercise 1, but returning a stream instead of a list
+     * @param stream
+     * @param mapper
+     * @param <T>
+     * @param <R>
+     * @return
+     */    
+     public static <T, R> Stream<R> mapToStream(Stream<T> stream, Function<? super T, ? extends R> mapper) {
+
+        Spliterator<T> iterT = stream.spliterator();
+        Spliterator<R> iter = new Spliterators.AbstractSpliterator<R>(iterT.estimateSize(), Spliterator.ORDERED) {
+            @Override
+            public boolean tryAdvance(Consumer<? super R> action) {
+                return iterT.tryAdvance(r -> action.accept(mapper.apply(r)));
+
+            }
+        };
+        return StreamSupport.stream(iter, false);
+    }
+    
+    
 
 }
