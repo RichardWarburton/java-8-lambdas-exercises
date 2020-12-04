@@ -1,7 +1,7 @@
 java-8-lambdas-exercises
 ========================
 
-This git repository contains support material for the [Java 8 Lambdas](http://tinyurl.com/java8lambdas) book.
+This git repository contains support material for the [Java 8 Lambdas](https://www.oreilly.com/library/view/java-8-lambdas/9781449370831/) book.
 
 Project Structure
 -----------------
