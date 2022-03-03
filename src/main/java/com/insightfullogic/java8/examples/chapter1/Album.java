@@ -19,9 +19,9 @@ import static java.util.stream.Collectors.toList;
  */
 public final class Album implements Performance {
     
-    private String name;
-    private List<Track> tracks;
-    private List<Artist> musicians;
+    private final String name;
+    private final List<Track> tracks;
+    private final List<Artist> musicians;
 
     public Album(String name, List<Track> tracks, List<Artist> musicians) {
         Objects.requireNonNull(name);
@@ -73,9 +73,9 @@ public final class Album implements Performance {
     }
 
     public Album copy() {
-        List<Track> tracks = getTracks().map(Track::copy).collect(toList());
-        List<Artist> musicians = getMusicians().map(Artist::copy).collect(toList());
-        return new Album(name, tracks, musicians);
+        List<Track> copiesTracks = getTracks().map(Track::copy).collect(toList());
+        List<Artist> copiesMusicians = getMusicians().map(Artist::copy).collect(toList());
+        return new Album(name, copiesTracks, copiesMusicians);
     }
 
 }
