@@ -3,6 +3,7 @@ package com.insightfullogic.java8.answers.chapter2;
 import org.junit.Test;
 
 import java.util.Calendar;
+import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,12 +11,7 @@ public class Question2Test {
 
     @Test
     public void exampleInB() {
-        Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.YEAR, 1970);
-        cal.set(Calendar.MONTH, Calendar.JANUARY);
-        cal.set(Calendar.DAY_OF_MONTH, 1);
-        String formatted = Question2.formatter.get().format(cal.getTime());
-        assertEquals("01-Jan-1970", formatted);
+        assertEquals("15-Jun-2022", Question2.getFormat().get().format(new Date()));
     }
 
 }
