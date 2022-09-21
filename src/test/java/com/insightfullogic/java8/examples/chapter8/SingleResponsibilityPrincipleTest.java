@@ -45,5 +45,40 @@ public class SingleResponsibilityPrincipleTest {
         assertEquals(11, primeCounter.countPrimes(30));
     }
 
+    @Test
+    public void countsTime1000() {
+        long start = System.currentTimeMillis();
+        int upTo = 1000;
+        primeCounter.countPrimes(upTo);
+        long end = System.currentTimeMillis();
+        System.out.printf("%s(%d) counts %d ms\n", primeCounter.getClass().getSimpleName(), upTo, end-start);
+    }
+
+    @Test
+    public void countsTime2000() {
+        long start = System.currentTimeMillis();
+        int upTo = 2000;
+        primeCounter.countPrimes(upTo);
+        long end = System.currentTimeMillis();
+        System.out.printf("%s(%d) counts %d ms\n", primeCounter.getClass().getSimpleName(), upTo, end-start);
+    }
+
+    @Test
+    public void countsTime4000() {
+        long start = System.currentTimeMillis();
+        int upTo = 4000;
+        primeCounter.countPrimes(upTo);
+        long end = System.currentTimeMillis();
+        System.out.printf("%s(%d) counts %d ms\n", primeCounter.getClass().getSimpleName(), upTo, end-start);
+    }
+
+    @Test
+    public void countsTime8000() {
+        long start = System.currentTimeMillis();
+        int upTo = 8000;
+        primeCounter.countPrimes(upTo);
+        long end = System.currentTimeMillis();
+        System.out.printf("%s(%d) counts %d ms\n", primeCounter.getClass().getSimpleName(), upTo, end-start);
+    }
 }
 
