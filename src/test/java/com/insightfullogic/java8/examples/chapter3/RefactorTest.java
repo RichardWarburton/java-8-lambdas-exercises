@@ -6,8 +6,10 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.function.Supplier;
+import java.util.Collections;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.unmodifiableList;
@@ -35,7 +37,10 @@ public class RefactorTest {
             Refactor.LongTrackFinder longTrackFinder = finder.get();
             Set<String> longTracks = longTrackFinder.findLongTracks(albums);
 
-            assertEquals("[Acknowledgement, Resolution]", longTracks.toString());
+	    List<String> result = new ArrayList<String>(longTracks);
+	    Collections.sort(result);
+
+            assertEquals("[Acknowledgement, Resolution]", result.toString());
 
             longTracks = longTrackFinder.findLongTracks(noTracks);
 
