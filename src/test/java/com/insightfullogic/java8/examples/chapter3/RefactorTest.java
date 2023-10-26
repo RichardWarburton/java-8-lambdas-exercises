@@ -35,6 +35,11 @@ public class RefactorTest {
             Refactor.LongTrackFinder longTrackFinder = finder.get();
             Set<String> longTracks = longTrackFinder.findLongTracks(albums);
 
+            List<String> expectedTracks = Arrays.asList("Acknowledgement", "Resolution");
+            List<String> actualTracks = new ArrayList<>(longTracks);
+            Collections.sort(actualTracks);
+            assertEquals(expectedTracks, actualTracks);
+
             assertEquals("[Acknowledgement, Resolution]", longTracks.toString());
 
             longTracks = longTrackFinder.findLongTracks(noTracks);
